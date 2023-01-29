@@ -1,0 +1,82 @@
+#board {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+#body-text{
+    margin: auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+}
+
+#note{
+    margin: auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:white;
+}
+  
+#board td {
+    width: 50px;
+    height: 50px;
+    border: solid 1px #666;
+    background-color: rgb(255, 123, 0); /* add background color */
+    border: solid 2px black; /* add a 2px solid border */
+    border-radius: 15px; /* add rounded corners */
+  }
+  body{
+    background-color: black;
+  }
+
+  #title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: auto;
+    width: 50%; /* or any other width value */
+    text-align: center;
+    text-decoration: underline;
+    color: white
+  }
+  
+  /* pieces are div within game table cells: draw as colored circles */
+  
+  .piece {
+    margin: 5px;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* adds a 2px horizontal, 2px vertical, 5px blur, and 30% opacity black shadow */
+    border: 2px solid black; /* adds a 2px solid black border */
+    transform: rotate(-45deg) skew(20deg);
+  }
+  
+  .piece.p1 {
+    background-color: red;
+  }
+  
+  .piece.p2 {
+    background-color: blue;
+  }
+  
+  /* column-top is table row of clickable areas for each column */
+  
+  #column-top td {
+    border: solid 1px white;
+  }
+  
+  #column-top td:hover {
+    background-color: black;
+  }
+
+  #resetButton{
+    margin:auto;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 12px;
+    padding: 15px 32px;
+  }
+
