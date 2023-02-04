@@ -47,6 +47,7 @@
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* adds a 2px horizontal, 2px vertical, 5px blur, and 30% opacity black shadow */
     border: 2px solid black; /* adds a 2px solid black border */
+    /* Makes the pieces look almost 3D for a more realistic experience*/
     transform: rotate(-45deg) skew(20deg);
   }
   
@@ -75,7 +76,9 @@
     position: relative;
     top:50%;
     left:50%;
+/* Wanted to make the reset button look 3D so played around with some transforms*/
     transform: translate(-50%,-50%);
+      
     border-radius: 12px;
     padding: 15px 32px;
   }
