@@ -64,7 +64,8 @@ function findSpotForCol(x) {
   return null;
 }
 
-/** placeInTable: update DOM to place piece into HTML table of board */
+// placeInTable: update DOM to place piece into HTML table of board, used to update the HTML table with the new move.
+
 
 function placeInTable(y, x) {
   const piece = document.createElement('div');
@@ -145,6 +146,7 @@ function checkForWin() {
       }
     }
   }
+  // Decided to add a reset button instead of askign users to refresh the page
   document.getElementById("resetButton").addEventListener("click", resetGame);
     function resetGame() {
     location.reload();
@@ -153,6 +155,10 @@ function checkForWin() {
 }
 
 
-
+// Calls functions 
 makeBoard();
 makeHtmlBoard();
+
+// Improvement considerations:
+// It would be helpful to include error handling, such as checking for undefined values or out of bounds conditions in the code.
+// May also want to consider add test with Jasmine to ensure that the code works as expected and doesn't break. 
